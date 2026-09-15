@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Inference artifacts and result directories
+results/
+outputs/
+
+# Model weights
+checkpoints/
+*.safetensors
+*.bin
+*.pth
+
+# Local task notes
+todo.md
+
+.DS_Store

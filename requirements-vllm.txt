@@ -1,0 +1,3 @@
+-r requirements.txt
+# Qwen3-VL requires 0.11.0+; use improved async scheduling from 0.11.1+.
+vllm>=0.11.1,<1

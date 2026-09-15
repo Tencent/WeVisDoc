@@ -1,0 +1,5 @@
+# Local Transformers inference dependencies.
+torch>=2.4.0
+transformers>=4.57.0,<5
+accelerate>=0.34.0
+Pillow>=10.0.0

@@ -1,0 +1,2 @@
+# Client dependencies; install GPU dependencies for the selected backend.
+openai>=1.40.0,<3
