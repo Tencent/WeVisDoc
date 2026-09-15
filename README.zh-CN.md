@@ -3,13 +3,11 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
 <p align="center">
-  <a href="https://tencent.github.io/WeVisDoc"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub_Pages-Website-222?logo=githubpages&logoColor=white"></a>
-  &nbsp;
-  <a href="https://huggingface.co/Tencent/WeVisDoc-2B"><img alt="WeVisDoc-2B" src="https://img.shields.io/badge/Hugging_Face-2B-FFD21E?logo=huggingface&logoColor=black"></a>
-  &nbsp;
-  <a href="https://huggingface.co/Tencent/WeVisDoc-4B"><img alt="WeVisDoc-4B" src="https://img.shields.io/badge/Hugging_Face-4B-FFD21E?logo=huggingface&logoColor=black"></a>
-  &nbsp;
-  <a href="#" title="Coming soon"><img alt="Technical Report (coming soon)" src="https://img.shields.io/badge/Technical_Report-Coming_Soon-lightgrey?logo=arxiv"></a>
+  <a href="https://github.com/Tencent/WeVisDoc"><img src="assets/badges/github.svg" alt="GitHub"></a>
+  <a href="https://tencent.github.io/WeVisDoc"><img src="assets/badges/project-page.svg" alt="Project Page"></a>
+  <a href="https://huggingface.co/Tencent/WeVisDoc-4B"><img src="assets/badges/wevisdoc-4b.svg" alt="WeVisDoc-4B"></a>
+  <a href="https://huggingface.co/Tencent/WeVisDoc-2B"><img src="assets/badges/wevisdoc-2b.svg" alt="WeVisDoc-2B"></a>
+  <a href="#" title="Coming soon"><img src="assets/badges/technical-report.svg" alt="Technical Report"></a>
 </p>
 
 WeVisDoc 是面向文档图片的端到端解析模型，由 [Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) 与 [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) 微调得到，将页面转为结构化 Markdown，并输出 LaTeX 公式与 HTML 表格。
