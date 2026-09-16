@@ -45,7 +45,7 @@ def build_messages(path, prompt, system_prompt, *, backend="openai"):
         raise ValueError(f"Unknown backend: {backend}")
     path = validate_image(path)
     if backend == "local":
-        image = {"type": "image", "url": path.as_uri()}
+        image = {"type": "image", "path": str(path)}
     else:
         encoded = base64.b64encode(path.read_bytes()).decode("ascii")
         url = f"data:{IMAGE_TYPES[path.suffix.lower()]};base64,{encoded}"
@@ -53,7 +53,12 @@ def build_messages(path, prompt, system_prompt, *, backend="openai"):
     content = [image, {"type": "text", "text": prompt}]
     messages = []
     if system_prompt:
-        messages.append({"role": "system", "content": system_prompt})
+        system_content = (
+            [{"type": "text", "text": system_prompt}]
+            if backend == "local"
+            else system_prompt
+        )
+        messages.append({"role": "system", "content": system_content})
     return messages + [{"role": "user", "content": content}]
 
 

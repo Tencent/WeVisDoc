@@ -5,6 +5,18 @@ __pycache__/
 build/
 dist/
 
+# Node.js and Next.js generated files
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+
+# Local environment files
+.env*
+!.env.example
+
 # Inference artifacts and result directories
 results/
 outputs/
