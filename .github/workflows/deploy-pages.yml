@@ -41,7 +41,9 @@ jobs:
       - name: Build and test
         run: npm test
         env:
-          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # This project is served from https://tencent.github.io/WeVisDoc/.
+          # Pages may report an isolated root URL, so keep the public path explicit.
+          PAGES_BASE_PATH: /WeVisDoc
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
