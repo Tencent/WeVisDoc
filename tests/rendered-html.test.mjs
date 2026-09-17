@@ -127,3 +127,34 @@ test("ships every report-backed asset in a static-only application", async () =>
   await assert.rejects(access(new URL("../worker/index.ts", import.meta.url)));
   await assert.rejects(access(new URL("../.openai/hosting.json", import.meta.url)));
 });
+
+test("keeps the qualitative predictions literal", async () => {
+  const page = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  const literalPredictionFragments = [
+    "<table><tr><td>5</td>",
+    "陈述语气\\n祈使语气\\n语气",
+    "结构和显著的重叠",
+    "Primary Standard(Level)",
+    "Airport Pickup Matrix 接机安排 (Apr 19-20)",
+    "右侧颈动脉 Right Carotid ★",
+    "用于决定异常响应是否升级为 maintenance escalation 或生产会议通报项。",
+    "Diluted EPSNote 2",
+    "GW-IoT-4200 Edge Gateway",
+    "not a placeholder underscore.",
+    "91440300MA5FP7TN8K",
+    "la 直接原因",
+  ];
+
+  for (const fragment of literalPredictionFragments) {
+    assert.ok(page.includes(fragment), `missing literal prediction fragment: ${fragment}`);
+  }
+
+  assert.doesNotMatch(
+    page,
+    /\[(?:The|Page-level|Footer|IMT|Matching|Column-major|Labels)[^\]]*\]/,
+  );
+  assert.doesNotMatch(
+    page,
+    /The (?:formula is emitted|displayed expression is serialized)/,
+  );
+});
