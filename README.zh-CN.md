@@ -2,13 +2,11 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-<p align="center">
-  <a href="https://github.com/Tencent/WeVisDoc"><img src="assets/badges/github.svg" alt="GitHub"></a>
-  <a href="https://tencent.github.io/WeVisDoc"><img src="assets/badges/project-page.svg" alt="Project Page"></a>
-  <a href="https://huggingface.co/Tencent/WeVisDoc-4B"><img src="assets/badges/wevisdoc-4b.svg" alt="WeVisDoc-4B"></a>
-  <a href="https://huggingface.co/Tencent/WeVisDoc-2B"><img src="assets/badges/wevisdoc-2b.svg" alt="WeVisDoc-2B"></a>
-  <a href="#" title="Coming soon"><img src="assets/badges/technical-report.svg" alt="Technical Report"></a>
-</p>
+[![GitHub](https://img.shields.io/badge/-GitHub-4B5563?style=flat&logo=github&logoColor=white&labelColor=6B7280)](https://github.com/Tencent/WeVisDoc)
+[![Project Page](https://img.shields.io/badge/-Project%20Page-4B5563?style=flat&logo=googlechrome&logoColor=white&labelColor=6B7280)](https://tencent.github.io/WeVisDoc)
+[![WeVisDoc-4B](https://img.shields.io/badge/-WeVisDoc--4B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-4B)
+[![WeVisDoc-2B](https://img.shields.io/badge/-WeVisDoc--2B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-2B)
+[![Technical Report](https://img.shields.io/badge/-Technical%20Report-C94C4C?style=flat&logo=arxiv&logoColor=B31B1B&labelColor=6B7280)](# "Coming soon")
 
 WeVisDoc 是面向文档图片的端到端解析模型，由 [Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) 与 [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) 微调得到，将页面转为结构化 Markdown，并输出 LaTeX 公式与 HTML 表格。
 
