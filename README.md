@@ -1,6 +1,6 @@
 # WeVisDoc project page
 
-Source for the [WeVisDoc project page](https://tencent.github.io/WeVisDoc). It presents the 2B and 4B open-model releases, benchmark results, the training method, and twelve interactive qualitative cases. The technical report is marked as coming soon until its public URL is available.
+Source for the [WeVisDoc project page](https://tencent.github.io/WeVisDoc). It presents the 2B and 4B open-model releases, benchmark results, the training method, and twelve interactive qualitative cases. Read the [technical report](https://arxiv.org/abs/2609.20423) on arXiv.
 
 ## Local development
 

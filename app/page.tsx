@@ -7,6 +7,7 @@ type DatasetId = "odb" | "clean" | "digital" | "real";
 const repositoryUrl = "https://github.com/Tencent/WeVisDoc";
 const model4BUrl = "https://huggingface.co/Tencent/WeVisDoc-4B";
 const model2BUrl = "https://huggingface.co/Tencent/WeVisDoc-2B";
+const reportUrl = "https://arxiv.org/abs/2609.20423";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function assetPath(path: string) {
@@ -288,7 +289,7 @@ export default function Home() {
             <a className="button primary" href="#demo"><span className="liveDot" />Explore 12 recoveries</a>
             <a className="button ghost" href={model4BUrl} target="_blank" rel="noreferrer">WeVisDoc-4B <span aria-hidden="true">↗</span></a>
             <a className="button ghost" href={model2BUrl} target="_blank" rel="noreferrer">WeVisDoc-2B <span aria-hidden="true">↗</span></a>
-            <span className="button ghost disabledButton" aria-disabled="true">Report · Coming soon</span>
+            <a className="button ghost" href={reportUrl} target="_blank" rel="noreferrer">Technical report <span aria-hidden="true">↗</span></a>
           </div>
           <div className="heroStats" aria-label="Headline results">
             <div><span>OmniDocBench v1.6</span><strong>95.38</strong><small>Overall · 4B</small></div>
@@ -508,9 +509,9 @@ export default function Home() {
               <a href={model2BUrl} target="_blank" rel="noreferrer">
                 <span>Model checkpoint</span><strong>WeVisDoc-2B ↗</strong><small>Compact end-to-end parser</small>
               </a>
-              <div>
-                <span>Technical report</span><strong>Coming soon</strong><small>Paper and citation will be added here.</small>
-              </div>
+              <a href={reportUrl} target="_blank" rel="noreferrer">
+                <span>Technical report</span><strong>arXiv:2609.20423 ↗</strong><small>Read the paper on arXiv</small>
+              </a>
             </div>
           </div>
         </div>

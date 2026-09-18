@@ -31,7 +31,8 @@ test("exports the finished WeVisDoc project page", async () => {
   assert.match(html, /https:\/\/github\.com\/Tencent\/WeVisDoc/);
   assert.match(html, /https:\/\/huggingface\.co\/Tencent\/WeVisDoc-4B/);
   assert.match(html, /https:\/\/huggingface\.co\/Tencent\/WeVisDoc-2B/);
-  assert.match(html, /Report · Coming soon/i);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2609\.20423/);
+  assert.match(html, /arXiv:2609\.20423/);
   assert.match(html, /https:\/\/tencent\.github\.io\/WeVisDoc\/og\.png/);
   assert.match(
     html,
@@ -57,6 +58,7 @@ test("exports the finished WeVisDoc project page", async () => {
 
   assert.doesNotMatch(html, deprecatedProjectName);
   assert.doesNotMatch(html, /main\.pdf/i);
+  assert.doesNotMatch(html, /Report · Coming soon/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|Building your site/i);
   assert.doesNotMatch(html, /react-loading-skeleton/i);
 });
