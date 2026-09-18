@@ -6,7 +6,7 @@
 [![Project Page](https://img.shields.io/badge/-Project%20Page-4B5563?style=flat&logo=googlechrome&logoColor=white&labelColor=6B7280)](https://tencent.github.io/WeVisDoc)
 [![WeVisDoc-4B](https://img.shields.io/badge/-WeVisDoc--4B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-4B)
 [![WeVisDoc-2B](https://img.shields.io/badge/-WeVisDoc--2B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-2B)
-[![Technical Report](https://img.shields.io/badge/-Technical%20Report-C94C4C?style=flat&logo=arxiv&logoColor=B31B1B&labelColor=6B7280)](# "Coming soon")
+[![Technical Report](https://img.shields.io/badge/-Technical%20Report-C94C4C?style=flat&logo=arxiv&logoColor=B31B1B&labelColor=6B7280)](https://arxiv.org/abs/2609.20423)
 
 WeVisDoc is an end-to-end document parser for page images. Fine-tuned from [Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) and [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct), it turns a page into structured Markdown, with LaTeX formulas and HTML tables.
 
@@ -168,3 +168,14 @@ python -m wevisdoc.local --model Tencent/WeVisDoc-2B \
 ```
 
 Use `Tencent/WeVisDoc-4B` for the 4B version. `--model` can be omitted when `WEVISDOC_MODEL_PATH` is set. Local inference supports `--device-map` (default `auto`) and `--max-tokens` (8192). Render PDFs to page images first.
+
+## Citation
+
+```bibtex
+@article{wevisdoc,
+  title   = {WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing},
+  author  = {Hao Yu and Kang Liu and Linnan Zhao and Jiabo Zhan and Chong Sun and Chen Li and Jing Lyu},
+  year    = {2026},
+  journal = {arXiv preprint arXiv: 2609.20423}
+}
+```

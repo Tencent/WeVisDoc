@@ -6,7 +6,7 @@
 [![Project Page](https://img.shields.io/badge/-Project%20Page-4B5563?style=flat&logo=googlechrome&logoColor=white&labelColor=6B7280)](https://tencent.github.io/WeVisDoc)
 [![WeVisDoc-4B](https://img.shields.io/badge/-WeVisDoc--4B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-4B)
 [![WeVisDoc-2B](https://img.shields.io/badge/-WeVisDoc--2B-E6A700?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=6B7280)](https://huggingface.co/Tencent/WeVisDoc-2B)
-[![Technical Report](https://img.shields.io/badge/-Technical%20Report-C94C4C?style=flat&logo=arxiv&logoColor=B31B1B&labelColor=6B7280)](# "Coming soon")
+[![Technical Report](https://img.shields.io/badge/-Technical%20Report-C94C4C?style=flat&logo=arxiv&logoColor=B31B1B&labelColor=6B7280)](https://arxiv.org/abs/2609.20423)
 
 WeVisDoc 是面向文档图片的端到端解析模型，由 [Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) 与 [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) 微调得到，将页面转为结构化 Markdown，并输出 LaTeX 公式与 HTML 表格。
 
@@ -168,3 +168,14 @@ python -m wevisdoc.local --model Tencent/WeVisDoc-2B \
 ```
 
 如需使用 4B 版本，将模型 ID 替换为 `Tencent/WeVisDoc-4B`。设置 `WEVISDOC_MODEL_PATH` 后可省略 `--model`。本地推理支持 `--device-map`（默认 `auto`）和 `--max-tokens`（默认 8192）。PDF 需先转成页面图片。
+
+## 引用
+
+```bibtex
+@article{wevisdoc,
+  title   = {WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing},
+  author  = {Hao Yu and Kang Liu and Linnan Zhao and Jiabo Zhan and Chong Sun and Chen Li and Jing Lyu},
+  year    = {2026},
+  journal = {arXiv preprint arXiv: 2609.20423}
+}
+```
